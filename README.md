@@ -1,159 +1,141 @@
-🌸 KalaKriti AI: An AI-Powered Global Marketplace for Artisans
+# 🌸 KalaKriti AI: An AI-Powered Global Marketplace for Artisans
 
-✨ Empowering Tradition Through Technology
+## ✨ Empowering Tradition Through Technology
 
-KalaKriti AI is a groundbreaking global marketplace designed to revitalize traditional Indian craftsmanship by merging cultural authenticity with advanced AI tools. Our mission is to empower local artisans to secure a sustainable future by giving them global visibility and the ability to co-create unique, personalized art with customers.
+KalaKriti AI is a groundbreaking, GenAI-powered global marketplace designed to revitalize traditional Indian craftsmanship. Our project merges cultural authenticity with advanced Google Cloud AI tools to empower local artisans and allow customers to co-create unique, personalized art.
 
-🎯 The Core Innovation: AI as Collaborator
+## 🎯 The Core Innovation: AI as Collaborator, Not Replacement
 
-Our platform is defined by its unique approach: AI acts as a partner, not a replacement. This philosophy is demonstrated through our two flagship features, all built using Google Cloud AI tools:
+Our philosophy centers on human-in-the-loop intelligence, protecting and enhancing the artisan's craft.
 
-1. Custom AI Co-Creation Engine (The USP)
+### Key AI Value Propositions
 
-Function: Allows the customer to input a product idea and select an artistic style (Traditional, Fusion, etc.).
+Custom AI Co-Creation Engine
 
-Process: Vertex AI (Imagen/Gemini) instantly generates a precise visual Mockup Preview .
+Technology Used: Vertex AI (Imagen/Gemini)
 
-Value: Bridges the gap between customer vision and artisan capability, creating a high-value, customizable order pipeline.
+Value to User: Enables customers to visualize product ideas instantly (e.g., custom silk scarf mockups).
 
-2. AI Guardian of Tradition 🛡️
+AI Guardian of Tradition
 
-Function: A critical, real-time compliance filter that runs on every customer request.
+Technology Used: Vertex AI (Gemini)
 
-Process: Instantly classifies requests as PASS or FAIL, intervening to block submissions that involve copyright infringement or cultural trivialization (e.g., misuse of sacred imagery).
+Value to User: A real-time filter that blocks culturally trivializing or copyrighted requests, ensuring compliance.
 
-Value: Upholds the integrity of traditional art and ensures the platform remains a safe, respectful environment.
+Artisan AI Helper
 
-👥 Feature Breakdown by User Role
+Technology Used: Cloud Vision AI + Gemini
 
-The application is built around two primary, role-switched views for maximum efficiency:
+Value to User: Instantly generates professional product descriptions, price ranges, and tags from an uploaded product image.
 
-🛍️ Customer Interface
+NLP-Powered Bridge
 
-Feature
+Technology Used: Cloud Translation API
 
-Functionality
+Value to User: Provides seamless, real-time multilingual chat between global buyers and local artisans.
 
-UX/Value
+## 👥 Feature Breakdown by User Role
 
-Explorer Page
+The application features a secure Role Toggle to switch between two distinct, highly optimized user experiences.
 
-Pinterest-style feed and "Featured of the Week" panel.
+### 🛍️ Customer Interface (The Buyer's Journey)
 
-Intuitive, visual product discovery.
+The journey is focused on discovery, ideation, and transparent tracking.
+
+Explorer Feed
+
+Functionality: Pinterest-style, dynamic feed featuring the "Featured of the Week" and Hype Points for engagement.
+
+UX/Value: The central hub for visual discovery.
 
 Co-Creation Page
 
-Two-step input form for generating the AI Mockup.
+Functionality: Simple two-step form (Description + Style Selection) to generate the visual AI Mockup.
 
-Sub-minute workflow from idea to visual request.
+UX/Value: Core USP, enables personalized orders instantly.
 
-Orders Tab
+Order Tracking
 
-Visual progress bar tracking custom pieces through Accepted → Production → Quality Check → Shipped.
+Functionality: Visual progress bar tracking custom creations through Accepted → Production → Quality Check → Shipped.
 
-Provides total transparency and eliminates anxiety.
+UX/Value: Eliminates anxiety and builds trust through transparency.
 
 Kriti AI Assistant
 
-Always-on, multilingual support chat powered by Cloud Translation API.
+Functionality: Always-on, multilingual support chat for quick queries.
 
-Ensures instant, reliable communication.
+UX/Value: Enhances user experience and platform reliability.
 
-🎨 Artisan Interface
+### 🎨 Artisan Interface (The Creator's Hub)
 
-Feature
-
-Functionality
-
-UX/Value
+The hub is focused on efficiency, analytics, and business empowerment.
 
 Dashboard
 
-Real-time widgets for Completed/Pending Orders and a Chart.js visualization of order trends.
+Functionality: Real-time analytics, including total orders, pending requests, and a Chart.js visualization of order trends.
 
-Provides instant, data-driven business oversight.
-
-Orders Management
-
-Dashboard to Accept, Reject, or Chat on incoming AI Mockup Requests.
-
-Centralized hub for high-value custom order management.
+UX/Value: Provides actionable business intelligence.
 
 AI Helper Tab
 
-Assists with product listings: Cloud Vision AI analyzes product images, and Gemini generates professional descriptions and price recommendations.
+Functionality: Workflow for image upload and automated generation of optimal product listings (description/pricing).
 
-Automates content creation and enhances market competitiveness.
+UX/Value: Automates business tasks, saving significant time.
 
-Hype Points Leaderboard
+Orders Management
 
-Gamified weekly ranking system visible on the dashboard.
+Functionality: Dedicated view to Accept, Reject, or Chat on incoming AI Mockup Requests.
 
-Drives artisan motivation and product visibility.
+UX/Value: Streamlines the process for fulfilling high-value custom orders.
 
-⚙️ Project Architecture & Tech Stack
+Hype Points Tracker
 
-The platform is designed using a modern, scalable serverless stack hosted entirely on Google Cloud infrastructure.
+Functionality: Leaderboard display showcasing artisan rankings based on customer engagement.
 
-Layer
+UX/Value: Gamified system to drive motivation and visibility.
 
-Technology
+## ⚙️ Technical Architecture & Stack
 
-Role in Project
+The entire application runs on a scalable, secure, and fully managed Google Cloud infrastructure.
 
 Frontend
 
-React (JSX), Tailwind CSS
+Technology: React (JSX), Tailwind CSS
 
-Fast, responsive UI and Role Toggle for seamless switching.
+Role in Project: Fast, responsive Single Page Application (SPA) with intuitive design.
 
 Backend / Logic
 
-Cloud Run
+Technology: Cloud Run
 
-Secure, serverless containerized backend for handling all sensitive API calls.
-
-Generative AI
-
-Vertex AI (Imagen/Gemini)
-
-Core engine for mockups and cultural compliance filter.
-
-Image Analysis
-
-Cloud Vision AI
-
-Extracts details from artisan product photos for the AI Helper.
-
-Translation
-
-Cloud Translation API
-
-Powers the multilingual functionality of the Kriti AI Assistant.
+Role in Project: Secure, serverless containerized backend for handling all API calls to AI services.
 
 Database
 
-Cloud Firestore
+Technology: Cloud Firestore
 
-Real-time, scalable NoSQL data storage for all transactional and user data.
+Role in Project: Real-time NoSQL data storage for all transactional and user data.
+
+AI Integration
+
+Technology: Vertex AI, Cloud Vision AI
+
+Role in Project: The core generative and analytical intelligence layer.
 
 Hosting / Auth
 
-Firebase Hosting, Firebase Auth
+Technology: Firebase Hosting, Firebase Auth
 
-Secure global deployment and robust user authentication.
+Role in Project: Secure global deployment and robust user authentication.
 
-🚀 Getting Started
+## 🚀 Get Started
 
-To run this prototype locally, follow the modular structure laid out in the source files. You will need to configure environment variables for the secure Cloud Run backend to access the Google Cloud AI services.
+Clone the repository and run npm install to set up the local React environment. Configure your secure Cloud Run backend to handle the Vertex AI API calls.
 
-Team Name: GEN-ius
+Team Name:
 
-Project Name: KalaKriti AI
+$$GEN-ius$$
 
-Theme: AI for Empowerment & Inclusion
-
-Demo Link: [Insert your live demo URL here]
+Problem: AI-Powered Marketplace Assistant for Local Artisans
 
 KalaKriti AI is where art meets algorithms—a platform that lets technology empower tradition rather than replace it.
