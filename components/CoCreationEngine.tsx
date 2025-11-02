@@ -189,7 +189,7 @@ const CoCreationEngine: React.FC = () => {
                             )}
                             {!isLoading && !generatedImage && !error && (
                                 <div className="text-center text-gray-500">
-                                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center">
+                                    <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto">
                                         <ImageIcon size={32} />
                                     </div>
                                     <p className="mt-4 font-semibold">Your AI-generated mockup will appear here</p>

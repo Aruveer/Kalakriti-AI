@@ -53,7 +53,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate, userRole, setUser
       </header>
       <main>
         <section className="text-center py-24 sm:py-32 px-6">
-            <h1 className="font-serif text-5xl sm:text-7xl font-bold text-brand-text">Welcome to <span className="text-brand-maroon-light">KalaKriti AI</span></h1>
+            <h1 className="font-serif text-5xl sm:text-7xl font-extrabold text-brand-text">Welcome to <span className="text-brand-maroon-light">KalaKriti AI</span></h1>
             <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-600">Where AI-powered creativity meets master artisan craftsmanship. Discover unique handcrafted treasures or co-create your dream product with our intelligent design platform.</p>
             <div className="mt-10 flex items-center justify-center gap-x-4">
                 <button onClick={() => onNavigate(userRole === 'Customer' ? 'cocreation' : 'dashboard')} className="flex items-center gap-2 rounded-lg bg-brand-maroon-light px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-brand-maroon transition-transform duration-300 hover:scale-105"><StartCreatingIcon />{userRole === 'Customer' ? 'Start Creating' : 'Go to Dashboard'}</button>
