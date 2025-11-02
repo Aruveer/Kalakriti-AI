@@ -104,11 +104,11 @@ A fully functional, role-based web prototype built using Google Cloud tools.
 
 ## 💻 Working Product & Demo  
 
-- **Live Web Demo:** _[Add your Firebase or Netlify link here]_  
-- **Demo Video (3 min):** _[Add your YouTube or Drive link here]_  
+- **Live Web Demo:** _[https://kalakriti-ai-863217283863.us-west1.run.app/]_  
+  
 
 **Includes:**  
-- Login & Authentication  
+
 - Explorer Feed  
 - AI Co-Creation mockup generation  
 - Artisan Dashboard & Analytics  
